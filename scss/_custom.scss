@@ -1,0 +1,22 @@
+/*
+################################
+# Override Bootstrap Variables # 
+################################
+ */
+$primary: #055080;
+$secondary: #6e93bf;
+$font-family-base: "Signika", sans-serif;
+$link-hover-color: $secondary !important;
+$navbar-light-active-color: $primary !important;
+
+/*
+################################
+# General Style Rules # 
+################################
+ */
+
+section {
+  min-height: calc(100vh - 76px);
+  margin-top: 80px;
+}
+@import "../assets/bootstrap/scss/bootstrap.scss";

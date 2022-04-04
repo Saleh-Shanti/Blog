@@ -1,0 +1,9 @@
+footer {
+  .author {
+    font-style: italic;
+    &:hover {
+      cursor: pointer;
+      color: rgba(167, 167, 167, 0.692);
+    }
+  }
+}

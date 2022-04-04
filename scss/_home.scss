@@ -1,0 +1,63 @@
+@import "custom";
+.home {
+  margin-top: 76px;
+  background-image: url("../assets/images/home.webp");
+  .hero {
+    height: calc(100vh - 76px);
+    width: 100%;
+    position: relative;
+    img {
+      width: 100%;
+      height: 100%;
+      filter: blur(3.45px);
+    }
+    &::after {
+      position: absolute;
+      content: "";
+      display: block;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+
+      background: #055080;
+
+      mix-blend-mode: soft-light;
+    }
+    .hero-text {
+      position: absolute;
+      width: 100%;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      color: $primary;
+      background-color: rgba(228, 228, 228, 0.527);
+      padding: 2rem;
+      h1 {
+        font-family: "Lobster", cursive;
+      }
+    }
+  }
+}
+.recent-post-section,.post-hover {
+  .sec-heading {
+    position: relative;
+    overflow: hidden;
+    &::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 95%;
+      transform: translateX(-50%);
+      width: 20%;
+      border-bottom: 3px solid #055080;
+    }
+  }
+  .card {
+    transition: 0.5s ease-in-out;
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.06);
+    }
+  }
+}
